@@ -1,4 +1,4 @@
-# REST-Endpoint
+# Randomizer
 Development of Rest endpoint
 
 ### List of endpoints:
