@@ -19,9 +19,9 @@ Development of Rest endpoint
 |POST  |Post a number and receive a randomly generated number|
 |PUT   |Update default parameter|
 
-_params_
-1.-batch- = Return multiple random numbers
-2.-single- = Return single random number (Default)
+__params__
+1. -batch- = Return multiple random numbers
+2. -single- = Return single random number (Default)
 
 ##### /functions/1/parabolas
 
@@ -31,6 +31,6 @@ _params_
 |POST  |Post a number and receive a parabolas randomly generated number|
 |PUT   |Update default parameter|
 
-_params_
-1.-batch- = Return multiple random numbers
-2.-single- = Return single random number (Default)
+__params__
+1. -batch- = Return multiple random numbers
+2. -single- = Return single random number (Default)
