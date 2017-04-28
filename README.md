@@ -80,7 +80,7 @@ http://127.0.0.1/rest/distributions/parabolas
 | limit     | yes                      | The amount of randomly generated number your wish to receive           |
 | start     | yes                      | Starting range           |
 | end     | yes                      | Ending range          |
-| middle     | yes                      | Middle point         |
+| middle     | no                      | Middle point         |
 
 
 
