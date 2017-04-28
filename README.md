@@ -1,5 +1,11 @@
-# Randomizer
-Development of Rest endpoint
+# Description 
+
+REST endpoint designed with the functionality of returning randomly generated numbers to the user. The endpoint allows for 2 methods of generation:
+
+    1. Parabola - Gives a list of numbers with a higher ratio to the middle point
+    2. Traditional Randomly Generated - Returns a list of completely random numbers
+
+
 
 ### List of endpoints:
 
