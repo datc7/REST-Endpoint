@@ -10,13 +10,14 @@ Development of Rest endpoint
 |GET   |Return list of randomly generated numbers|
 |PUT   |Update default generator|
 
-###### GET
+__GET__
 Returns a json list of numbers which are randomly generated using the normal distribution. 
 Call can be made using the following:
 
 http://127.0.0.1/rest/distributions/randoms
 
-__Parameters__
+
+###### Parameters
 
 |Parameter|Required|Result|
 |----------------------|----------------------|
@@ -26,7 +27,11 @@ __Parameters__
 |offset|no|Used to page through results|
 
 
-###### PUT
+
+
+
+__PUT__
+
 Allows you to update the deafult generator when using the endpoint. 
 Call can be made using the following:
 
@@ -36,7 +41,8 @@ http://127.0.0.1/rest/distributions/randoms
     "generator": "-batch-"       // new generator
 }
 
-__Generators__
+###### Generators
+
 1. -batch- = Return multiple random numbers
 2. -single- = Return single random number (Default)
 
