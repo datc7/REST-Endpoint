@@ -3,34 +3,38 @@ Development of Rest endpoint
 
 ### List of endpoints:
 
-##### /functions
+##### /distributions/randoms
 
 |Method|Result|
 |----------------------|----------------------|
-|GET   |Return  useuable funtcions of endpoint|
-|POST  |TBD                                   |
-|PUT   |TBD                                   |
+|GET   |Return list of randomly generated numbers|
+|PUT   |Update default generator|
 
-##### /functions/1/randoms
+###### GET
+Returns a json list of numbers which are randomly generated using the normal distribution. 
+Call can be made using the following:
 
-|Method|Result|
-|----------------------|----------------------|
-|GET   |Return  how to use the endpoint|
-|POST  |Post a number and receive a randomly generated number|
-|PUT   |Update default parameter|
+http://127.0.0.1/rest/distributions/randoms
 
-__params__
+__Parameters__
+
+|Parameter|Required|Result
+|num1|no|A number used to allow for randomly generated numbers between 2 points.|
+|num2|no/(yes if num1)|The second number for randomly geerated numbers between 2 points.|
+|limit|yes|The amount of randomly generated number your wish to receive.|
+|offset|no|Used to page through results.|
+
+__Generators__
 1. -batch- = Return multiple random numbers
 2. -single- = Return single random number (Default)
 
-##### /functions/1/parabolas
+##### /distributions/parabolas
 
 |Method|Result|
 |----------------------|----------------------|
-|GET   |Return  how to use the endpoint|
-|POST  |Post a number and receive a parabolas randomly generated number|
+|GET   |Return list of prabola generated numbers|
 |PUT   |Update default parameter|
 
-__params__
+__generators__
 1. -batch- = Return multiple random numbers
 2. -single- = Return single random number (Default)
