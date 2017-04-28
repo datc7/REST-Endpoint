@@ -11,6 +11,7 @@ Development of Rest endpoint
 |PUT   |Update default generator|
 
 __GET__
+
 Returns a json list of numbers which are randomly generated using the normal distribution. 
 Call can be made using the following:
 
@@ -22,7 +23,7 @@ http://127.0.0.1/rest/distributions/randoms
 | Parameter | Required                 | Result                                                                 |
 |-----------|--------------------------|------------------------------------------------------------------------|
 | num1      | no                       | A number used to allow for randomly generated numbers between 2 points |
-| num2      | no/yes if num1 is chosen | The second number for randomly geerated numbers between 2 points       |
+| num2      | no/yes if 'num1' is chosen | The second number for randomly geerated numbers between 2 points       |
 | offset    | no                       | Used to page through results                                           |
 | limit     | yes                      | The amount of randomly generated number your wish to receive           |
 
@@ -51,7 +52,42 @@ http://127.0.0.1/rest/distributions/randoms
 |Method|Result|
 |----------------------|----------------------|
 |GET   |Return list of prabola generated numbers|
-|PUT   |Update default parameter|
+|PUT   |Update default generator|
+
+
+
+__GET__
+
+Returns a json list of numbers which are randomly generated using the normal distribution. 
+Call can be made using the following:
+
+http://127.0.0.1/rest/distributions/parabolas
+
+
+###### Parameters
+
+| Parameter | Required                 | Result                                                                 |
+|-----------|--------------------------|------------------------------------------------------------------------|
+| num1      | no                       | A number used to allow for randomly generated numbers between 2 points |
+| num2      | no/yes if 'num1' is chosen | The second number for randomly geerated numbers between 2 points       |
+| offset    | no                       | Used to page through results                                           |
+| limit     | yes                      | The amount of randomly generated number your wish to receive           |
+
+
+
+
+
+__PUT__
+
+Allows you to update the deafult generator when using the endpoint. 
+Call can be made using the following:
+
+http://127.0.0.1/rest/distributions/parabolas
+
+{
+    "generator": "-batch-"       // new generator
+}
+
 
 __generators__
 1. -batch- = Return multiple random numbers
