@@ -19,12 +19,12 @@ http://127.0.0.1/rest/distributions/randoms
 
 ###### Parameters
 
-|Parameter|Required|Result|
-|----------------------|----------------------|
-|num1|no|A number used to allow for randomly generated numbers between 2 points|
-|num2|no|The second number for randomly geerated numbers between 2 points|
-|limit|yes|The amount of randomly generated number your wish to receive|
-|offset|no|Used to page through results|
+| Parameter | Required                 | Result                                                                 |
+|-----------|--------------------------|------------------------------------------------------------------------|
+| num1      | no                       | A number used to allow for randomly generated numbers between 2 points |
+| num2      | no/yes if num1 is chosen | The second number for randomly geerated numbers between 2 points       |
+| offset    | no                       | Used to page through results                                           |
+| limit     | yes                      | The amount of randomly generated number your wish to receive           |
 
 
 
