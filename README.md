@@ -28,8 +28,8 @@ http://127.0.0.1/rest/distributions/randoms
 
 | Parameter | Required                 | Result                                                                 |
 |-----------|--------------------------|------------------------------------------------------------------------|
-| num1      | no                       | A number used to allow for randomly generated numbers between 2 points |
-| num2      | no/yes if 'num1' is chosen | The second number for randomly geerated numbers between 2 points       |
+| start      | yes                       | Starting point |
+| end      | yes | Ending point      |
 | offset    | no                       | Used to page through results                                           |
 | limit     | yes                      | The amount of randomly generated number your wish to receive           |
 
@@ -74,8 +74,6 @@ http://127.0.0.1/rest/distributions/parabolas
 
 | Parameter | Required                 | Result                                                                 |
 |-----------|--------------------------|------------------------------------------------------------------------|
-| num1      | no                       | A number used to allow for randomly generated numbers between 2 points |
-| num2      | no/yes if 'num1' is chosen | The second number for randomly generated numbers between 2 points       |
 | offset    | no                       | Used to page through results                                           |
 | limit     | yes                      | The amount of randomly generated number your wish to receive           |
 | start     | yes                      | Starting range           |
